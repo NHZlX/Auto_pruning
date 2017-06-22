@@ -76,14 +76,11 @@ layer {
 
 ### Vgg-s
 ```
-#模型太大，未上传，具体见 https://github.com/jimgoo/caffe-oxford102
-cd models/caffe-oxford102
-./boostrap.py   # download data of oxford flowers 102
-sh train.sh  # remember to modity the data_dir in *.prototxt
+#模型太大，未上传，原始模型以及数据具体见 https://github.com/jimgoo/caffe-oxford102
 ```
 
 ### Mobilenet
-oxford 所有1*1 卷积压缩可达到71% 精度损失在0.05内
+oxford flowers 102上 所有1*1 卷积压缩可达到71% 精度损失在0.05内
 ```
 cd models/oxford
 ./train_mobilenet.sh  #train the mobilenet 
