@@ -64,9 +64,10 @@ layer {
 }
 
 ```
-### Process of sparsity changes
+## Process of sparsity changes
 ![](./examples/photo/log.png)
-整个fine-tune过程，稀疏变化次数为  `iter_stop / inter_iter`，每过`inter_iter` 变化一次. 正如上图所示，变化过程为一个log曲线，到训练后期重要参数很多， 一次性prune掉较多参数会导致accuracy严重下降， 因而前期稀疏度上升比较大，越到后期上升幅度小。
+整个fine-tune过程为一个阶段，为每层设定一个upperbound稀疏度，稀疏度从0开始，整个过程稀疏变化次数为  `iter_stop / inter_iter`，每过`inter_iter`次iter 变化一次。 正如上图所示，变化过程为一个log曲线，训练后期, 参数比较少， 一次性prune掉较多参数会导致accuracy严重下降， 因而前期稀疏度上升比较大，越到后期上升幅度小。
+训练结束的模型*.caffemodel，除了存储parameter还有mask， 所以比原始模型大一倍是正常的。后续须自行处理。
 
 
 ## Examples
