@@ -76,6 +76,7 @@ layer {
 
 ### Vgg-s
 ```
+#模型太大，未上传，具体见 https://github.com/jimgoo/caffe-oxford102
 cd models/caffe-oxford102
 ./boostrap.py   # download data of oxford flowers 102
 sh train.sh  # remember to modity the data_dir in *.prototxt
