@@ -1,0 +1,22 @@
+net: "/home/xingzhaolong/caffe_project/Auto_prune/models/oxford/mobilenet/mobilenet_deploy.prototxt_pruning"
+
+base_lr: 0.005
+
+test_iter: 102
+test_interval: 500
+
+lr_policy: "step"
+
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.00005
+
+stepsize: 20000
+display: 50
+max_iter: 40000
+snapshot: 4000
+snapshot_prefix: "mobilenet/mobile_pruning"
+
+iter_size: 5
+solver_mode: GPU
+
