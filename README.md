@@ -90,5 +90,5 @@ cd models/oxford
 ```
 
 
-**Note**
+**Note:**    
 I did this work during my internship at Baidu IDL Paddle group.
