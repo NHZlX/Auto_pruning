@@ -88,3 +88,7 @@ cd models/oxford
 ./train_pruning.sh    # pruning a pre-trained models
 
 ```
+
+
+**Note**
+I did this work during my internship at Baidu IDL Paddle group.
